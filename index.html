@@ -4,201 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        body {
-
-            background: rgb(255, 255, 255);
-        }
-
-        .menuNa {
-            border-radius: 20px;
-            border: 20px solid white;
-
-            display: flex;
-            background-color: #F8F9FF;
-        }
-
-        .menu {
-            position: relative;
-            border-radius: 25px;
-            padding: 18px;
-            display: flex;
-            background-color: #F8F9FF;
-        }
-
-        #ul-menu {
-            display: flex;
-        }
-
-        .menu ul li {
-
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-decoration: none;
-            color: black;
-            list-style-type: none;
-            padding: 15px;
-            margin-right: 10px;
-
-        }
-
-        .menu ul li:hover {
-            background-color: #DDE1F9;
-            border-radius: 15px;
-
-        }
-
-        .Bt {
-            background-color: #F8F9FF;
-            margin-left: auto;
-            display: flex;
-            align-items: center;
-        }
-
-        button {
-            margin-top: 35px;
-            margin-bottom: 35px;
-            width: 121px;
-            height: 55px;
-            border-radius: 5px;
-        }
-
-        #bt1 {
-            background-color: #F8F9FF;
-            border: 0px;
-        }
-
-        #bt1 a {
-            text-decoration: none;
-            color: black;
-
-        }
-
-        #bt2 {
-            color: white;
-            background-color: black;
-        }
-
-        #bt2 a {
-            text-decoration: none;
-            color: white;
-
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-
-
-
-
-        #sub-menu:hover {
-            display: block;
-        }
-
-
-        .menu>li {
-            position: relative;
-        }
-
-
-        .menu li:hover .sub-menu {
-            display: block;
-            background: #ffffff;
-            border: 1px solid #ffffff;
-        }
-
-        .sub-menu {
-            width: 450px;
-            display: none;
-            position: absolute;
-            top: 66%;
-            left: 47.5%;
-            background: #ffffff;
-            border-radius: 12px;
-
-            padding: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-        }
-
-
-        .sub-menu-box {
-            display: flex;
-            gap: 50px;
-
-        }
-
-        .sub-menu-box ul {
-
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sub-menu-box ul li {
-            padding: auto,
-        }
-
-        .sub-menu-box ul li a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .sub-menu-box ul li a:hover {
-
-            border-radius: 1px;
-
-        }
-
-        */
-    </style>
+    <title>Task 1</title>
 </head>
+<style>
+    body {
+        background-color: #EEEEEE;
+        max-width: 1280;
+        max-height: max-content;
+    }
+
+    #header {
+        font-family: Helvetica;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin-top: 0px;
+        padding-bottom: 40px;
+        font-size: 50px;
+        background-color: #EEEEEE;
+    }
+
+    .Login-form {
+        background-color: #FFFFFF;
+        /* border: 1px solid red; */
+        align-items: center;
+        width: 500px;
+        margin: auto;
+    }
+
+    .Em-pa {
+        /* border: 1px solid red; */
+        text-align: center;
+        align-items: center;
+
+    }
+
+    div {
+        text-align: center;
+        align-items: center;
+        /* border: 1px solid red; */
+
+    }
+
+    label {
+        font-family: Helvetica;
+        margin-bottom: 5px;
+        padding: 0px;
+        margin-left: 2px;
+        font-size: 25px;
+        display: flex;
+    }
+
+    .pass {
+        margin-top: 35px;
+        display: flex;
+        margin-bottom: 0%;
+        gap: 30%;
+
+    }
+
+    input {
+        width: 98%;
+        height: 40px;
+        border: 2px solid #EEEEEE;
+
+        background-color: #F9F9F9CC;
+        border-radius: 5px;
+    }
+
+    p {
+        font-family: Helvetica;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .form {
+
+        border-radius: 50px;
+        padding: 30px;
+        background-color: #FFFFFF
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        border: 2px solid #EEEEEE;
+        border-radius: 5px;
+        color: #FFFFFF;
+        background-color: #007AFF;
+    }
+
+    .pass a {
+        color: #007AFF;
+        font-size: 24px;
+
+    }
+
+    .account {
+        display: flex;
+        gap: 4px;
+    }
+
+    .account a {
+        color: #007AFF;
+        font-size: 24px;
+        padding-top: 20px;
+    }
+</style>
 
 <body>
-    <div class="menuNa">
-        <div class="menu">
-            <ul id="ul-menu">
-                <li><a href="">FRAMEWORK</a></li>
-                <li><a href="">DEMOS</a></li>
+    <div class="Login-form">
 
-                <li>
-                    <a href="">RESOURCES</a>
-                    <div class="sub-menu">
-                        <p><strong>Top Controls</strong></p>
-                        <div class="sub-menu-box">
-                            <ul id="trai">
-                                <li><a href="">GRID</a></li>
-                                <li><a href="">CHART</a></li>
-                                <li><a href="">CONTROL</a></li>
-                                <li><a href="">FINANCIAL CHART</a></li>
-                            </ul>
-                            <ul id="phai">
-                                <li><a href="">API</a></li>
-                                <li><a href="">BLOG</a></li>
-                                <li><a href="">KNOWLEDGE BASE</a></li>
-                                <li><a href="">FINANCIAL CHART</a></li>
-                                <li><a href="">VIDEO</a></li>
-                                <li><a href="">FORUMS</a></li>
-                                <li><a href="">CONTROL</a></li>
-                                <li><a href="">LICENSING</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="">DOCUMENTATION</a></li>
-
-            </ul>
+        <p id="header">Login</p>
+        <div class="form">
+            <div class="Em-pa">
+                <label for="">Email</label>
+                <input type="text">
+                <div class="pass">
+                    <label for="">Password</label>
+                    <a>Forgot Password</a>
+                </div>
+                <input type="text">
+            </div>
+            <button><strong>Login</strong></button>
+            <div class="account">
+                <p>Don't have account?</p>
+                <a>Create new account </a>
+            </div>
         </div>
 
-        <div class="Bt">
-            <button id="bt1"><a href="">LOG IN</a></button>
-            <button id="bt2"><a href="">SIGN UP</a></button>
-        </div>
+
     </div>
-
 </body>
 
 </html>
